@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSULTA DE INSCRIÇÃO MUNICIPAL: PARA FINALIDADE EMISSÃO DE CERTIDÕES NARRATIVAS.</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>CONSULTA DE INSCRIÇÃO MUNICIPAL: PARA FINALIDADE EMISSÃO DE CERTIDÕES NARRATIVAS.</h1>
+    
+    <!--  CÓDIGO TEMPORARIAMENTE DESATIVADO PARA FUTURA FASE DE IMPLEMENTAÇÃO DE BANCO DE DADOS
+    <label for="fileInput">Carregar arquivos Excel (2020-2025):</label>
+    <input type="file" id="fileInput" multiple accept=".xlsx">
+    -->
+    
+    <label for="search">Inscrição Municipal:</label>
+    <input type="text" id="search" placeholder="Digite a inscrição (ex: 01.083.120.0050.001)">
+    <button onclick="buscarDados()">Pesquisar</button> <!-- Correção da função -->
+
+    <h2>Resultado da Pesquisa</h2>
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>Inscrição Municipal</th>
+                <th>Nº da Quadra</th>
+                <th>Nº do Lote</th>
+                <th>Ano</th>
+                <th>Metragem</th>
+                <th>Utilização</th>
+                <th>Estrutura</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <center>
+
+        <i>
+
+        <footer>
+            Site desenvolvido por Juliano <img src="https://d1yei2z3i6k35z.cloudfront.net/6946809/65e45ac72773e_zanoni.1.png" alt="Logo de Juliano Zanoni">
+        </footer>
+
+        </i>
+
+    </center>
+
+    <script src="script.js"></script>
+</body>
+</html>
